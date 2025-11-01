@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: new-news-app
+    env: python
+    plan: free # 使用免費方案
+    buildCommand: "pip install -r requirements.txt && cd frontend && npm install && npm run build"
+    startCommand: "gunicorn --worker-class gevent --bind 0.0.0.0:10000 app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4 # 您可以指定一個 Python 版本

@@ -1,0 +1,7 @@
+Flask
+feedparser
+gunicorn
+gevent
+pandas
+xlsxwriter
+snownlp
