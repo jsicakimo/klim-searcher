@@ -162,8 +162,8 @@ function App() {
   return (
     <div className="container">
       <div className="header">
-        <h1> 🔍Klim Searcher</h1>
-        <p>Stop Complaining, Cuddle With Me.🤗</p>
+        <h1> 🔍Hold Me Searcher</h1>
+        <p>不要抱怨，抱我!!! 🤗</p>
       </div>
 
       <div className="content">
@@ -175,7 +175,7 @@ function App() {
                 type="text"
                 id="keyword"
                 name="keyword"
-                defaultValue="台灣"
+                defaultValue=""
                 placeholder="輸入關鍵字..."
               />
             </div>
